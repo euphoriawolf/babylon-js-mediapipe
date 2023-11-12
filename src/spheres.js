@@ -1,4 +1,4 @@
-import { Mesh, MeshBuilder } from "@babylonjs/core";
+import { MeshBuilder } from "@babylonjs/core";
 
 /**
  * Build simple TUPLE with 2 arrays of 21 Spheres that we will place on each point later

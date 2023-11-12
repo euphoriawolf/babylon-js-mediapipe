@@ -7,6 +7,7 @@ import "@babylonjs/inspector";
 import { initializeScene } from "./src/scene";
 import buildSpheres from "./src/spheres";
 import render from "./src/render";
+import wrist from "./src/wrist";
 
 const initialize = async () => {
   const canvas = document.querySelector("#canvas");
@@ -22,6 +23,8 @@ const initialize = async () => {
   const landMarkPoints = 21;
 
   const [spheresLeft, spheresRight] = buildSpheres(scene, landMarkPoints);
+
+  const wristAttachments = wrist(scene);
 
   /** Locate Hand tracking ML Trained model */
   const hands = new Hands({
@@ -57,6 +60,7 @@ const initialize = async () => {
       spheresRight,
       landMarkPoints,
       viewport,
+      wristAttachments,
     })
   );
 };
