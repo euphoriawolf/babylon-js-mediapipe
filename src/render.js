@@ -46,18 +46,11 @@ const render = ({
       );
 
       if (result.multiHandedness[hand].label == "Right") {
-        // spheresRight[0].isVisible = true;
-        // spheresRight[0].position.x = vector.x / 100;
-        // spheresRight[0].position.y = vector.y / 100;
         wristAttachments.position.x = vector.x / 100;
         wristAttachments.position.y = vector.y / 100;
       } else {
-        // We substract from projection camera height
-        spheresLeft[0].isVisible = true;
-        spheresLeft[0].position.x = vector.x / 100;
-        spheresLeft[0].position.y = vector.y / 100;
-
-        //spheresLeft[i].position.z = vector.z;
+        wristAttachments.position.x = vector.x / 100;
+        wristAttachments.position.y = vector.y / 100;
       }
     }
   }
