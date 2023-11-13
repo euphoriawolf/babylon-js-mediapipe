@@ -52,18 +52,6 @@ const wristAttachments = (scene) => {
     }
   );
 
-  //   async function loadModels() {
-  //     const models = await BABYLON.SceneLoader.ImportMesh(
-  //       "",
-  //       "/src/",
-  //       "scene.glb",
-  //       scene
-  //     );
-  //     console.log("models", models);
-  //   }
-
-  //   loadModels();
-
   return attachments;
 };
 
