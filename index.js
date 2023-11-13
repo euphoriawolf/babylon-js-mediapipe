@@ -15,8 +15,8 @@ const initialize = async () => {
   if (!video || !canvas) return;
 
   // Setup our scene
+
   const scene = initializeScene(canvas);
-  // Store our camera's reference
   const viewport = scene.activeCamera;
   viewport.position.z = -100;
 
